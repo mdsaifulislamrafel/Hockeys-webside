@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind css and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- google font awesome link -->
+    <script src="https://kit.fontawesome.com/dd049e1eb4.js" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Manrope", sans-serif;
+            box-sizing: border-box;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="container mx-auto my-14 hide">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end space-x-6">
+                <i class="fa-solid fa-magnifying-glass hidden lg:block w-6 text-[#89898B]"></i>
+                <a class="btn bg-[#FF4240] text-white py-4 px-6 font-bold">Button</a>
+            </div>
+        </div>
+    </header>
+    <!-- header section start -->
+    <main class="container w-[90%] mx-auto my-24">
+        <!-- banner section start -->
+        <section class="hide">
+            <div class="w-full h-auto md:h-[400px] lg:h-[500px] mx-auto relative">
+                <div class="carousel h-full w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img src="./images/1.png" class="w-full" />
+                        <div
+                            class="absolute flex items-center justify-center md:justify-start gap-5 transform -translate-y-1/2 left-5 right-5 bottom-5">
+                            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                            class="w-full" />
+                        <div
+                            class="absolute flex items-center justify-center md:justify-start gap-5 transform -translate-y-1/2 left-5 right-5 bottom-5">
+                            <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                            <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full md:absolute md:bottom-7 md:right-7 md:w-[510px] h-[165px] bg-black rounded-md mt-3 p-2 md:p-5">
+                    <h1 class=" text-xl md:text-2xl font-extrabold text-white">Meet all the heroes from the field</h1>
+                    <p class="text-sm md:text-base text-white md:py-4 leading-5">Dit amet consectetur. Condimentum
+                        dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- banner section start -->
+
+        <!-- Professional Hockeys Club section start -->
+        <section class="text-center hide">
+            <div class="text-center space-y-8 mb-12">
+                <hr class="border border-dashed">
+                <h2 class="text-[#131318] text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p class="text-[#13131899] font-medium lg:w-[600px] mx-auto">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                <hr class="border border-dashed">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="space-y-4">
+                    <div class="radial-progress text-[#ff4240]" style="--value:70; --size:12rem; --thickness: 1rem;"
+                        role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">87%</span></div>
+                    <h4 class="text-[#131318] font-semibold text-xl">Prayer Facility</h4>
+                    <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing
+                        .</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="radial-progress text-[#49D293]" style="--value:95; --size:12rem; --thickness: 1rem;"
+                        role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">95%</span></div>
+                    <h4 class="text-[#131318] font-semibold text-xl">Experienced Coach</h4>
+                    <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing
+                        .</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="radial-progress text-[#ffb546]" style="--value:90; --size:12rem; --thickness: 1rem;"
+                        role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">90%</span></div>
+                    <h4 class="text-[#131318] font-semibold text-xl">Senior Player</h4>
+                    <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing
+                        .</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="radial-progress text-[#4C8DF1]" style="--value:80; --size:12rem; --thickness: 1rem;"
+                        role="progressbar"><span class="text-2xl font-extrabold text-[#131318]">80%</span></div>
+                    <h4 class="text-[#131318] font-semibold text-xl">Training Ground</h4>
+                    <p class="text-[#13131899] text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing
+                        .</p>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club section end -->
+
+        <!-- Program Sections start -->
+        <section class="hide">
+            <div class="text-center space-y-8 mb-12">
+                <hr class="border border-dashed">
+                <h2 class="text-[#131318] text-4xl font-extrabold">Program Sections</h2>
+                <p class="text-[#13131899] font-medium lg:w-[600px] mx-auto">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <hr class="border border-dashed">
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center gap-8">
+                <div class="card w-full lg:w-[573px] " style="background-image: url(./images/2.png); background-repeat: no-repeat; background-size: cover;">
+                    <div class="card-body bg-[#13131880] text-white rounded-2xl ">
+                        <h2 class="text-3xl font-extrabold mt-24">Junior Program</h2>
+                        <p>olor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in</p>
+                        <div class="mt-6">
+                            <button class="btn py-2 px-5 text-xl font-bold bg-[#FF4240] border-0 text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-[573px]" style="background-image: url(./images/3.png); background-repeat: no-repeat; background-size: cover;">
+                    <div class="card-body bg-[#13131880] text-white rounded-2xl ">
+                        <h2 class="text-3xl font-extrabold mt-24">Teenager Program</h2>
+                        <p>olor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in</p>
+                        <div class="mt-6">
+                            <button class="btn py-2 px-5 text-xl font-bold bg-[#FF4240] border-0 text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card lg:w-[78%] w-full mt-8 mx-auto" style="background-image: url(./images/4.png); background-repeat: no-repeat; background-size: cover;">
+                <div class="card-body bg-[#13131880] text-white rounded-2xl ">
+                    <h2 class="text-3xl font-extrabold mt-24">Teenager Program</h2>
+                    <p class="lg:w-[520px]">olor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                        congue sed et in</p>
+                    <div class="mt-6">
+                        <button class="btn py-2 px-5 text-xl font-bold bg-[#FF4240] border-0 text-white">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Program Sections end -->
+
+
+    </main>
+
+</body>
+
+</html>
